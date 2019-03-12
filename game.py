@@ -15,7 +15,6 @@ class S_Invaders:
 
     def draw(self):
         pyxel.cls(0)
-        pyxel.rect(50,50,100,100,5)
         self.p1.draw() 
 
 
