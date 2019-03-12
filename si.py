@@ -12,7 +12,20 @@ class si:
         self.i.draw()
 
     def update(self):
-        self.p.update()
+        if pyxel.btn(pyxel.KEY_A):
+            self.p.move(-1)
+        elif pyxel.btn(pyxel.KEY_D):
+            self.p.move(1)
+            
+        if pyxel.btnp(pyxel.KEY_SPACE):
+            self.p.shoot()
+
+        for bullet in self.p.bullets:
+            bullet.update()
+            if bullet.y<-5:
+                self.p.bullets.remove(bullet)
+
         self.i.update()
+        
 
 

@@ -5,19 +5,8 @@ class ship:
         self.pos=100
         self.bullets=[] 
 
-    def update(self):
-        if pyxel.btn(pyxel.KEY_A):
-            self.move(-1)
-        elif pyxel.btn(pyxel.KEY_D):
-            self.move(1)
+    #def update(self):
         
-        if pyxel.btnp(pyxel.KEY_SPACE):
-            self.shoot()
-
-        for bullet in self.bullets:
-            bullet.update()
-            if bullet.y < -5:
-                self.bullets.remove(bullet)
 
 
     def draw(self):
