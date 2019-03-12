@@ -5,8 +5,8 @@ import pyxel
 class S_Invaders:
     def __init__(self):
         pyxel.init(200,250,caption="Space Invaders" ,fps=60)
-        pyxel.run(self.update,self.draw)
         self.p1=ship.ship()
+        pyxel.run(self.update,self.draw)
         
     def update(self):
         self.p1.update()
