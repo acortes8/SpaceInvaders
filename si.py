@@ -31,8 +31,8 @@ class si:
                     self.p.bullets.remove(bullet)
                     self.i.remove(invader)
              
-        for inv in self.i:
-            inv.update()
+        #for inv in self.i:
+        #    inv.update()
         
 
 
