@@ -5,8 +5,14 @@ class ship:
        self.pos=100
 
     def update(self):
-        print("f")
+        if pyxel.btn(pyxel.KEY_A):
+            self.move(-1)
+
 
     def draw(self):
         pyxel.rect(self.pos+4,202,self.pos+6,199,self.color)
         pyxel.rect(self.pos,202,self.pos+10,205,self.color)
+
+    def move(self,direction):
+        if direction is -1:
+            print("left")
