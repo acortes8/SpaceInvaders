@@ -16,7 +16,7 @@ class ship:
         pyxel.rect(self.pos,202,self.pos+10,205,self.color)
 
     def move(self,direction):
-        if direction is -1:
+        if direction is -1 and self.pos is not 0:
             print("left")
             self.pos -= 1
         if direction is 1:
