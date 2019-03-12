@@ -24,6 +24,7 @@ class si:
             bullet.update()
             if bullet.y<-5:
                 self.p.bullets.remove(bullet)
+                print(len(self.p.bullets))
 
         self.i.update()
         

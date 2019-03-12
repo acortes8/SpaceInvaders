@@ -6,8 +6,7 @@ class invaders:
         self.x=x
         self.y=y
 
-    def update(self):
-        print("'")
+    #def update(self):
         
     def draw(self):
         pyxel.rect(self.x,self.y,self.x+4,self.y+4,self.color)        
