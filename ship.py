@@ -7,6 +7,8 @@ class ship:
     def update(self):
         if pyxel.btn(pyxel.KEY_A):
             self.move(-1)
+        elif pyxel.btn(pyxel.KEY_D):
+            self.move(1)
 
 
     def draw(self):
@@ -16,3 +18,8 @@ class ship:
     def move(self,direction):
         if direction is -1:
             print("left")
+            self.pos -= 1
+        if direction is 1:
+            print("right")
+            self.pos += 1
+        
