@@ -19,7 +19,7 @@ class ship:
         if direction is -1 and self.pos is not 0:
             print("left")
             self.pos -= 1
-        if direction is 1:
+        if direction is 1 and self.pos is not 190:
             print("right")
             self.pos += 1
         
